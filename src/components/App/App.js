@@ -10,8 +10,13 @@ function App() {
   const [tricks, setTricks] = useState([]);
 
   const handleNewTrick = (newTrick) => {
+    const maxId = Math.max(...tricks.map(trick => trick.id))
+    const newId = maxId + 1
+    newTrick.id = newId
     setTricks([...tricks, newTrick]);
   };
+
+  // If I add POST I will have to change this handleNewTrick fn. 
 
   useEffect(() => {
     fetch("http://localhost:3001/api/v1/tricks")
