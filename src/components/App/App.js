@@ -16,7 +16,26 @@ function App() {
     setTricks([...tricks, newTrick]);
   };
 
-  // If I add POST I will have to change this handleNewTrick fn. 
+  // If I add POST I will have to change the above handleNewTrick fn. 
+
+// started POST but ran into errors with my tests... I need to intercept this POST as well...
+
+  // const handleNewTrick = (newTrick) => {
+  //   fetch('http://localhost:3001/api/v1/tricks', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(newTrick),
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       if (data && data.id) {
+  //         setTricks([...tricks, data]);
+  //       }
+  //     })
+  //     .catch((err) => console.error('Error: ', err));
+  // };
 
   useEffect(() => {
     fetch("http://localhost:3001/api/v1/tricks")
