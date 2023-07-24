@@ -1,5 +1,4 @@
 import './TrickCard.css';
-import React, { useEffect, useState } from "react";
 
 const TrickCard = ({ tricks }) => {
 
