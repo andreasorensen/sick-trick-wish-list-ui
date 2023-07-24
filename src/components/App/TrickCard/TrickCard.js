@@ -12,13 +12,13 @@ const TrickCard = () => {
   }, []);
 
   return (
-    <div>
+    <div className='cards-container'>
       {tricks.map((trick) => (
-        <div key={trick.id}>
+        <div className='trick-card' key={trick.id}>
           <h2>{trick.name}</h2>
           <p>Stance: {trick.stance}</p>
           <p>Obstacle: {trick.obstacle}</p>
-          <a href={trick.tutorial}>Tutorial Link</a>
+          <a href={trick.tutorial} className='trick-link'>Tutorial Link</a>
         </div>
       ))}
     </div>
