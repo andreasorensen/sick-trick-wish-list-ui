@@ -18,7 +18,6 @@ const TrickForm = ({ onNewTrick }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Stance:
         <select value={stance} onChange={(e) => setStance(e.target.value)}>
           <option value="">Select a stance</option>
           <option value="Regular">Regular</option>
@@ -27,12 +26,10 @@ const TrickForm = ({ onNewTrick }) => {
       </label>
 
       <label>
-        Name:
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input placeholder='Name' type="text" value={name} onChange={(e) => setName(e.target.value)} />
       </label>
 
       <label>
-        Obstacle:
         <select value={obstacle} onChange={(e) => setObstacle(e.target.value)}>
           <option value="">Select an obstacle</option>
           <option value="Flatground">Flatground</option>
@@ -44,8 +41,7 @@ const TrickForm = ({ onNewTrick }) => {
       </label>
 
       <label>
-        Tutorial:
-        <input type="text" value={tutorial} onChange={(e) => setTutorial(e.target.value)} />
+        <input placeholder='Tutorial'type="text" value={tutorial} onChange={(e) => setTutorial(e.target.value)} />
       </label>
 
       <button type="submit">SEND IT</button>
