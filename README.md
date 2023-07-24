@@ -38,18 +38,18 @@ Pull down the [API repo](https://github.com/turingschool-examples/sick-trick-wis
 
 Do *not* nest this inside your front-end repository.
 
-### Iteration 1
+### Iteration 1 [X]
 
-Get all existing tricks from the API on page load and display them on the DOM.
+Get all existing tricks from the API on page load and display them on the DOM. 
 
 
-### Iteration 2
+### Iteration 2  [X]
 
 Create a controlled Form component to create a trick (look into the API documentation to see what pieces of information are expected, and what datatypes it wants each piece to be). As a user types into the input fields, the form component's state should change.  When the user clicks the `SEND IT` button, the application should update the App's state.  The new trick should display with all of the existing tricks. 
 
 Notes:  
-- The `Stance` select input should contain options 'Regular' and 'Switch'
-- The `Obstacle` select input should contain options 'Flatground', 'Ledge', 'Rail', 'Stairs', and 'Pool'
+[X] The `Stance` select input should contain options 'Regular' and 'Switch'
+[X] The `Obstacle` select input should contain options 'Flatground', 'Ledge', 'Rail', 'Stairs', and 'Pool'
 - You do not need to worry about error handling!  
 - Do not worry about making the POST request to the database yet.
 
@@ -58,7 +58,7 @@ Notes:
 Now that the functionality is there for adding a trick, write some tests:
 
 **Be sure to intercept and stub any userflows that rely on data from the API**
-* Write tests covering what should be displayed on the page when the user first visits.
+* [X] Write tests covering what should be displayed on the page when the user first visits.
 * Write a test that checks that when data is put into the form, the value is reflected in that form input.
 * Write a test to check the user flow of adding a new trick to the DOM.
 

@@ -1,4 +1,4 @@
-[
+const trickData = [
   {
       "stance": "regular",
       "name": "treflip",
@@ -21,3 +21,5 @@
       "id": 3
   }
 ]
+
+export default trickData
